@@ -1,7 +1,7 @@
 const express=require("express");
 const app=express();
+const port=process.env.PORT || 8081
 
-
-app.listen(3000,()=>{
-    console.log("Hello");
+app.listen(port,()=>{
+    console.log(`Server started on Port ${port}`);
 })
