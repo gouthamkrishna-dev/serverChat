@@ -29,7 +29,7 @@ server.on("upgrade",(request,socket,head)=>{
     })
 })
 
-const client = new ws('ws://localhost:8081');
+const client = new ws("https://serverchat-m88s.onrender.com");
 
 client.on('open', () => {
   // Causes the server to print "Hello"
